@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+
+original_data_aid.csv
+original_data_conflict.rds
