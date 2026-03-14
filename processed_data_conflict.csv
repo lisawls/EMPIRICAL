@@ -1,0 +1,270 @@
+"country","year","nb_event"
+"Chad",1989,3
+"Chad",1990,19
+"Chad",1991,6
+"Chad",1992,31
+"Chad",1993,15
+"Chad",1994,17
+"Chad",1995,17
+"Chad",1996,3
+"Chad",1997,8
+"Chad",1998,9
+"Chad",1999,12
+"Chad",2000,14
+"Chad",2001,6
+"Chad",2002,9
+"Chad",2003,4
+"Chad",2004,10
+"Chad",2005,8
+"Chad",2006,62
+"Chad",2007,19
+"Chad",2008,15
+"Chad",2009,12
+"Chad",2010,1
+"Chad",2014,3
+"Chad",2015,29
+"Chad",2016,7
+"Chad",2017,6
+"Chad",2018,12
+"Chad",2019,23
+"Chad",2020,26
+"Chad",2021,13
+"Chad",2022,12
+"Chad",2023,11
+"Chad",2024,24
+"DR Congo (Zaire)",1989,3
+"DR Congo (Zaire)",1990,4
+"DR Congo (Zaire)",1991,7
+"DR Congo (Zaire)",1992,11
+"DR Congo (Zaire)",1993,20
+"DR Congo (Zaire)",1994,16
+"DR Congo (Zaire)",1995,16
+"DR Congo (Zaire)",1996,209
+"DR Congo (Zaire)",1997,137
+"DR Congo (Zaire)",1998,118
+"DR Congo (Zaire)",1999,168
+"DR Congo (Zaire)",2000,115
+"DR Congo (Zaire)",2001,66
+"DR Congo (Zaire)",2002,136
+"DR Congo (Zaire)",2003,82
+"DR Congo (Zaire)",2004,31
+"DR Congo (Zaire)",2005,25
+"DR Congo (Zaire)",2006,80
+"DR Congo (Zaire)",2007,112
+"DR Congo (Zaire)",2008,105
+"DR Congo (Zaire)",2009,551
+"DR Congo (Zaire)",2010,87
+"DR Congo (Zaire)",2011,165
+"DR Congo (Zaire)",2012,156
+"DR Congo (Zaire)",2013,161
+"DR Congo (Zaire)",2014,128
+"DR Congo (Zaire)",2015,124
+"DR Congo (Zaire)",2016,211
+"DR Congo (Zaire)",2017,503
+"DR Congo (Zaire)",2018,462
+"DR Congo (Zaire)",2019,441
+"DR Congo (Zaire)",2020,832
+"DR Congo (Zaire)",2021,809
+"DR Congo (Zaire)",2022,1199
+"DR Congo (Zaire)",2023,828
+"DR Congo (Zaire)",2024,783
+"Egypt",1990,2
+"Egypt",1992,5
+"Egypt",1993,43
+"Egypt",1994,76
+"Egypt",1995,118
+"Egypt",1996,75
+"Egypt",1997,34
+"Egypt",1998,10
+"Egypt",1999,2
+"Egypt",2000,4
+"Egypt",2004,3
+"Egypt",2005,4
+"Egypt",2006,2
+"Egypt",2008,2
+"Egypt",2009,2
+"Egypt",2010,1
+"Egypt",2011,4
+"Egypt",2012,2
+"Egypt",2013,46
+"Egypt",2014,45
+"Egypt",2015,60
+"Egypt",2016,40
+"Egypt",2017,111
+"Egypt",2018,86
+"Egypt",2019,120
+"Egypt",2020,124
+"Egypt",2021,64
+"Egypt",2022,68
+"Egypt",2023,4
+"Ethiopia",1989,72
+"Ethiopia",1990,110
+"Ethiopia",1991,44
+"Ethiopia",1992,16
+"Ethiopia",1993,13
+"Ethiopia",1994,5
+"Ethiopia",1995,9
+"Ethiopia",1996,5
+"Ethiopia",1997,4
+"Ethiopia",1998,21
+"Ethiopia",1999,42
+"Ethiopia",2000,77
+"Ethiopia",2001,52
+"Ethiopia",2002,124
+"Ethiopia",2003,69
+"Ethiopia",2004,126
+"Ethiopia",2005,90
+"Ethiopia",2006,102
+"Ethiopia",2007,145
+"Ethiopia",2008,83
+"Ethiopia",2009,87
+"Ethiopia",2010,98
+"Ethiopia",2011,92
+"Ethiopia",2012,90
+"Ethiopia",2013,54
+"Ethiopia",2014,27
+"Ethiopia",2015,97
+"Ethiopia",2016,148
+"Ethiopia",2017,41
+"Ethiopia",2018,63
+"Ethiopia",2019,63
+"Ethiopia",2020,263
+"Ethiopia",2021,730
+"Ethiopia",2022,879
+"Ethiopia",2023,579
+"Ethiopia",2024,866
+"Liberia",1989,6
+"Liberia",1990,138
+"Liberia",1991,19
+"Liberia",1992,26
+"Liberia",1993,47
+"Liberia",1994,92
+"Liberia",1995,52
+"Liberia",1996,31
+"Liberia",1997,3
+"Liberia",1998,1
+"Liberia",1999,3
+"Liberia",2000,5
+"Liberia",2001,28
+"Liberia",2002,43
+"Liberia",2003,53
+"Liberia",2019,1
+"Liberia",2020,2
+"Liberia",2024,1
+"Morocco",1989,6
+"Morocco",1991,2
+"Morocco",2003,2
+"Morocco",2011,1
+"Morocco",2020,1
+"Morocco",2021,7
+"Morocco",2022,4
+"Morocco",2023,2
+"Morocco",2024,2
+"Mozambique",1989,131
+"Mozambique",1990,44
+"Mozambique",1991,58
+"Mozambique",1992,34
+"Mozambique",1993,2
+"Mozambique",1994,2
+"Mozambique",1995,1
+"Mozambique",2004,1
+"Mozambique",2005,2
+"Mozambique",2010,1
+"Mozambique",2012,1
+"Mozambique",2013,18
+"Mozambique",2014,13
+"Mozambique",2016,31
+"Mozambique",2017,3
+"Mozambique",2018,48
+"Mozambique",2019,124
+"Mozambique",2020,213
+"Mozambique",2021,235
+"Mozambique",2022,268
+"Mozambique",2023,100
+"Mozambique",2024,185
+"Somalia",1989,33
+"Somalia",1990,52
+"Somalia",1991,20
+"Somalia",1992,18
+"Somalia",1993,20
+"Somalia",1994,37
+"Somalia",1995,69
+"Somalia",1996,92
+"Somalia",1997,27
+"Somalia",1998,18
+"Somalia",1999,42
+"Somalia",2000,27
+"Somalia",2001,31
+"Somalia",2002,61
+"Somalia",2003,49
+"Somalia",2004,52
+"Somalia",2005,26
+"Somalia",2006,79
+"Somalia",2007,294
+"Somalia",2008,288
+"Somalia",2009,255
+"Somalia",2010,313
+"Somalia",2011,271
+"Somalia",2012,446
+"Somalia",2013,383
+"Somalia",2014,406
+"Somalia",2015,319
+"Somalia",2016,377
+"Somalia",2017,285
+"Somalia",2018,509
+"Somalia",2019,426
+"Somalia",2020,394
+"Somalia",2021,390
+"Somalia",2022,338
+"Somalia",2023,247
+"Somalia",2024,174
+"South Sudan",2011,31
+"South Sudan",2012,59
+"South Sudan",2013,99
+"South Sudan",2014,125
+"South Sudan",2015,99
+"South Sudan",2016,69
+"South Sudan",2017,116
+"South Sudan",2018,157
+"South Sudan",2019,68
+"South Sudan",2020,63
+"South Sudan",2021,55
+"South Sudan",2022,35
+"South Sudan",2023,10
+"South Sudan",2024,15
+"Sudan",1989,33
+"Sudan",1990,63
+"Sudan",1991,30
+"Sudan",1992,57
+"Sudan",1993,78
+"Sudan",1994,19
+"Sudan",1995,43
+"Sudan",1996,54
+"Sudan",1997,90
+"Sudan",1998,126
+"Sudan",1999,64
+"Sudan",2000,71
+"Sudan",2001,74
+"Sudan",2002,54
+"Sudan",2003,103
+"Sudan",2004,224
+"Sudan",2005,87
+"Sudan",2006,109
+"Sudan",2007,71
+"Sudan",2008,98
+"Sudan",2009,125
+"Sudan",2010,94
+"Sudan",2011,165
+"Sudan",2012,115
+"Sudan",2013,141
+"Sudan",2014,160
+"Sudan",2015,365
+"Sudan",2016,250
+"Sudan",2017,63
+"Sudan",2018,101
+"Sudan",2019,92
+"Sudan",2020,70
+"Sudan",2021,77
+"Sudan",2022,110
+"Sudan",2023,375
+"Sudan",2024,705
