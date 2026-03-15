@@ -95,7 +95,8 @@ aid_clean <- aid_raw %>%
       .default = Mesure
     ),
     year = as.integer(TIME_PERIOD),
-    amount = coalesce(OBS_VALUE, 0),
+    amount = if_else(coalesce(OBS_VALUE, 0) < 0, NA_real_, coalesce(OBS_VALUE, 0)),
+    # amount = coalesce(OBS_VALUE, 0),
     is_usa = DONOR == "USA"
   ) %>%
   left_join(iso_lookup, by = "recipient_iso3")
@@ -113,7 +114,7 @@ aid_africa <- aid_clean %>%
     is.na(year_min) | year >= year_min
   ) %>%
   select(-continent)
-write.csv(aid_africa, "processed_data_aid_africa.csv", row.names = FALSE)
+write.csv(aid_africa, "processed_data_stats_aid_africa.csv", row.names = FALSE)
 
 
 # 4) Construct country-year aid aggregates (US vs. total aid)----
@@ -151,6 +152,8 @@ tot_aid_country_africa <- aid_africa %>%
     aid_hum_us = aid_us_hum,
     aid_total_all = aid_food_all + aid_hum_all,
     aid_total_us = aid_food_us + aid_hum_us)
+write.csv(tot_aid_country_africa, "processed_data_regression_aid.csv", row.names = FALSE)
+
  
 # 4bis) Country-year share of US aid in total aid----
 # These variables describe the share of US aid in total aid received
@@ -175,7 +178,7 @@ tot_aid_country_africa <- aid_africa %>%
      starts_with("aid_"),
      starts_with("share_us_"))
  
-write.csv(aid_shares_cty_year, "processed_aid_africa_share.csv", row.names = FALSE)
+write.csv(aid_shares_cty_year, "processed_stats_aid_africa_share.csv", row.names = FALSE)
 
 # 5) Construct the exposure term----
 # Exposure is defined as pre-2017 dependence on US aid.
@@ -272,4 +275,4 @@ shift_share <- tot_aid_country_africa %>%
     iv_total = share_pre_total * shock_total
   )
 
-write.csv(shift_share, "processed_data_shift_share.csv", row.names = FALSE)
+write.csv(shift_share, "processed_data_regression_shift_share.csv", row.names = FALSE)

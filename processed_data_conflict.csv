@@ -1,270 +1,905 @@
-"country","year","nb_event"
-"Chad",1989,3
-"Chad",1990,19
-"Chad",1991,6
-"Chad",1992,31
-"Chad",1993,15
-"Chad",1994,17
-"Chad",1995,17
-"Chad",1996,3
-"Chad",1997,8
-"Chad",1998,9
-"Chad",1999,12
-"Chad",2000,14
-"Chad",2001,6
-"Chad",2002,9
-"Chad",2003,4
-"Chad",2004,10
-"Chad",2005,8
-"Chad",2006,62
-"Chad",2007,19
-"Chad",2008,15
-"Chad",2009,12
-"Chad",2010,1
-"Chad",2014,3
-"Chad",2015,29
-"Chad",2016,7
-"Chad",2017,6
-"Chad",2018,12
-"Chad",2019,23
-"Chad",2020,26
-"Chad",2021,13
-"Chad",2022,12
-"Chad",2023,11
-"Chad",2024,24
-"DR Congo (Zaire)",1989,3
-"DR Congo (Zaire)",1990,4
-"DR Congo (Zaire)",1991,7
-"DR Congo (Zaire)",1992,11
-"DR Congo (Zaire)",1993,20
-"DR Congo (Zaire)",1994,16
-"DR Congo (Zaire)",1995,16
-"DR Congo (Zaire)",1996,209
-"DR Congo (Zaire)",1997,137
-"DR Congo (Zaire)",1998,118
-"DR Congo (Zaire)",1999,168
-"DR Congo (Zaire)",2000,115
-"DR Congo (Zaire)",2001,66
-"DR Congo (Zaire)",2002,136
-"DR Congo (Zaire)",2003,82
-"DR Congo (Zaire)",2004,31
-"DR Congo (Zaire)",2005,25
-"DR Congo (Zaire)",2006,80
-"DR Congo (Zaire)",2007,112
-"DR Congo (Zaire)",2008,105
-"DR Congo (Zaire)",2009,551
-"DR Congo (Zaire)",2010,87
-"DR Congo (Zaire)",2011,165
-"DR Congo (Zaire)",2012,156
-"DR Congo (Zaire)",2013,161
-"DR Congo (Zaire)",2014,128
-"DR Congo (Zaire)",2015,124
-"DR Congo (Zaire)",2016,211
-"DR Congo (Zaire)",2017,503
-"DR Congo (Zaire)",2018,462
-"DR Congo (Zaire)",2019,441
-"DR Congo (Zaire)",2020,832
-"DR Congo (Zaire)",2021,809
-"DR Congo (Zaire)",2022,1199
-"DR Congo (Zaire)",2023,828
-"DR Congo (Zaire)",2024,783
-"Egypt",1990,2
-"Egypt",1992,5
-"Egypt",1993,43
-"Egypt",1994,76
-"Egypt",1995,118
-"Egypt",1996,75
-"Egypt",1997,34
-"Egypt",1998,10
-"Egypt",1999,2
-"Egypt",2000,4
-"Egypt",2004,3
-"Egypt",2005,4
-"Egypt",2006,2
-"Egypt",2008,2
-"Egypt",2009,2
-"Egypt",2010,1
-"Egypt",2011,4
-"Egypt",2012,2
-"Egypt",2013,46
-"Egypt",2014,45
-"Egypt",2015,60
-"Egypt",2016,40
-"Egypt",2017,111
-"Egypt",2018,86
-"Egypt",2019,120
-"Egypt",2020,124
-"Egypt",2021,64
-"Egypt",2022,68
-"Egypt",2023,4
-"Ethiopia",1989,72
-"Ethiopia",1990,110
-"Ethiopia",1991,44
-"Ethiopia",1992,16
-"Ethiopia",1993,13
-"Ethiopia",1994,5
-"Ethiopia",1995,9
-"Ethiopia",1996,5
-"Ethiopia",1997,4
-"Ethiopia",1998,21
-"Ethiopia",1999,42
-"Ethiopia",2000,77
-"Ethiopia",2001,52
-"Ethiopia",2002,124
-"Ethiopia",2003,69
-"Ethiopia",2004,126
-"Ethiopia",2005,90
-"Ethiopia",2006,102
-"Ethiopia",2007,145
-"Ethiopia",2008,83
-"Ethiopia",2009,87
-"Ethiopia",2010,98
-"Ethiopia",2011,92
-"Ethiopia",2012,90
-"Ethiopia",2013,54
-"Ethiopia",2014,27
-"Ethiopia",2015,97
-"Ethiopia",2016,148
-"Ethiopia",2017,41
-"Ethiopia",2018,63
-"Ethiopia",2019,63
-"Ethiopia",2020,263
-"Ethiopia",2021,730
-"Ethiopia",2022,879
-"Ethiopia",2023,579
-"Ethiopia",2024,866
-"Liberia",1989,6
-"Liberia",1990,138
-"Liberia",1991,19
-"Liberia",1992,26
-"Liberia",1993,47
-"Liberia",1994,92
-"Liberia",1995,52
-"Liberia",1996,31
-"Liberia",1997,3
-"Liberia",1998,1
-"Liberia",1999,3
-"Liberia",2000,5
-"Liberia",2001,28
-"Liberia",2002,43
-"Liberia",2003,53
-"Liberia",2019,1
-"Liberia",2020,2
-"Liberia",2024,1
-"Morocco",1989,6
-"Morocco",1991,2
-"Morocco",2003,2
-"Morocco",2011,1
-"Morocco",2020,1
-"Morocco",2021,7
-"Morocco",2022,4
-"Morocco",2023,2
-"Morocco",2024,2
-"Mozambique",1989,131
-"Mozambique",1990,44
-"Mozambique",1991,58
-"Mozambique",1992,34
-"Mozambique",1993,2
-"Mozambique",1994,2
-"Mozambique",1995,1
-"Mozambique",2004,1
-"Mozambique",2005,2
-"Mozambique",2010,1
-"Mozambique",2012,1
-"Mozambique",2013,18
-"Mozambique",2014,13
-"Mozambique",2016,31
-"Mozambique",2017,3
-"Mozambique",2018,48
-"Mozambique",2019,124
-"Mozambique",2020,213
-"Mozambique",2021,235
-"Mozambique",2022,268
-"Mozambique",2023,100
-"Mozambique",2024,185
-"Somalia",1989,33
-"Somalia",1990,52
-"Somalia",1991,20
-"Somalia",1992,18
-"Somalia",1993,20
-"Somalia",1994,37
-"Somalia",1995,69
-"Somalia",1996,92
-"Somalia",1997,27
-"Somalia",1998,18
-"Somalia",1999,42
-"Somalia",2000,27
-"Somalia",2001,31
-"Somalia",2002,61
-"Somalia",2003,49
-"Somalia",2004,52
-"Somalia",2005,26
-"Somalia",2006,79
-"Somalia",2007,294
-"Somalia",2008,288
-"Somalia",2009,255
-"Somalia",2010,313
-"Somalia",2011,271
-"Somalia",2012,446
-"Somalia",2013,383
-"Somalia",2014,406
-"Somalia",2015,319
-"Somalia",2016,377
-"Somalia",2017,285
-"Somalia",2018,509
-"Somalia",2019,426
-"Somalia",2020,394
-"Somalia",2021,390
-"Somalia",2022,338
-"Somalia",2023,247
-"Somalia",2024,174
-"South Sudan",2011,31
-"South Sudan",2012,59
-"South Sudan",2013,99
-"South Sudan",2014,125
-"South Sudan",2015,99
-"South Sudan",2016,69
-"South Sudan",2017,116
-"South Sudan",2018,157
-"South Sudan",2019,68
-"South Sudan",2020,63
-"South Sudan",2021,55
-"South Sudan",2022,35
-"South Sudan",2023,10
-"South Sudan",2024,15
-"Sudan",1989,33
-"Sudan",1990,63
-"Sudan",1991,30
-"Sudan",1992,57
-"Sudan",1993,78
-"Sudan",1994,19
-"Sudan",1995,43
-"Sudan",1996,54
-"Sudan",1997,90
-"Sudan",1998,126
-"Sudan",1999,64
-"Sudan",2000,71
-"Sudan",2001,74
-"Sudan",2002,54
-"Sudan",2003,103
-"Sudan",2004,224
-"Sudan",2005,87
-"Sudan",2006,109
-"Sudan",2007,71
-"Sudan",2008,98
-"Sudan",2009,125
-"Sudan",2010,94
-"Sudan",2011,165
-"Sudan",2012,115
-"Sudan",2013,141
-"Sudan",2014,160
-"Sudan",2015,365
-"Sudan",2016,250
-"Sudan",2017,63
-"Sudan",2018,101
-"Sudan",2019,92
-"Sudan",2020,70
-"Sudan",2021,77
-"Sudan",2022,110
-"Sudan",2023,375
-"Sudan",2024,705
+"country","year","nb_event","mediane_nb_conflit","dummy_sup_mediane","quintile_nb_event","iso3"
+"Algeria",1990,1,92,0,1,"DZA"
+"Algeria",1991,4,92,0,1,"DZA"
+"Algeria",1992,120,92,1,3,"DZA"
+"Algeria",1993,269,92,1,5,"DZA"
+"Algeria",1994,350,92,1,5,"DZA"
+"Algeria",1995,394,92,1,5,"DZA"
+"Algeria",1996,123,92,1,3,"DZA"
+"Algeria",1997,128,92,1,4,"DZA"
+"Algeria",1998,383,92,1,5,"DZA"
+"Algeria",1999,226,92,1,5,"DZA"
+"Algeria",2000,252,92,1,5,"DZA"
+"Algeria",2001,80,92,0,3,"DZA"
+"Algeria",2002,225,92,1,5,"DZA"
+"Algeria",2003,209,92,1,4,"DZA"
+"Algeria",2004,219,92,1,4,"DZA"
+"Algeria",2005,72,92,0,2,"DZA"
+"Algeria",2006,91,92,0,3,"DZA"
+"Algeria",2007,128,92,1,4,"DZA"
+"Algeria",2008,111,92,1,3,"DZA"
+"Algeria",2009,191,92,1,4,"DZA"
+"Algeria",2010,92,92,1,3,"DZA"
+"Algeria",2011,125,92,1,4,"DZA"
+"Algeria",2012,124,92,1,4,"DZA"
+"Algeria",2013,73,92,0,3,"DZA"
+"Algeria",2014,43,92,0,2,"DZA"
+"Algeria",2015,46,92,0,2,"DZA"
+"Algeria",2016,27,92,0,2,"DZA"
+"Algeria",2017,26,92,0,2,"DZA"
+"Algeria",2018,10,92,0,2,"DZA"
+"Algeria",2019,9,92,0,1,"DZA"
+"Algeria",2020,17,92,0,2,"DZA"
+"Algeria",2021,6,92,0,1,"DZA"
+"Algeria",2022,3,92,0,1,"DZA"
+"Algeria",2023,1,92,0,1,"DZA"
+"Algeria",2024,1,92,0,1,"DZA"
+"Angola",1989,260,19,1,5,"AGO"
+"Angola",1990,181,19,1,5,"AGO"
+"Angola",1991,19,19,1,3,"AGO"
+"Angola",1992,38,19,1,4,"AGO"
+"Angola",1993,220,19,1,5,"AGO"
+"Angola",1994,320,19,1,5,"AGO"
+"Angola",1995,76,19,1,4,"AGO"
+"Angola",1996,28,19,1,4,"AGO"
+"Angola",1997,35,19,1,4,"AGO"
+"Angola",1998,110,19,1,4,"AGO"
+"Angola",1999,245,19,1,5,"AGO"
+"Angola",2000,130,19,1,5,"AGO"
+"Angola",2001,124,19,1,5,"AGO"
+"Angola",2002,69,19,1,4,"AGO"
+"Angola",2003,37,19,1,4,"AGO"
+"Angola",2004,19,19,1,3,"AGO"
+"Angola",2005,13,19,0,2,"AGO"
+"Angola",2006,12,19,0,2,"AGO"
+"Angola",2007,22,19,1,3,"AGO"
+"Angola",2008,9,19,0,2,"AGO"
+"Angola",2009,9,19,0,2,"AGO"
+"Angola",2010,4,19,0,1,"AGO"
+"Angola",2011,2,19,0,1,"AGO"
+"Angola",2013,1,19,0,1,"AGO"
+"Angola",2014,6,19,0,1,"AGO"
+"Angola",2015,2,19,0,1,"AGO"
+"Angola",2016,18,19,0,3,"AGO"
+"Angola",2017,24,19,1,3,"AGO"
+"Angola",2018,6,19,0,2,"AGO"
+"Angola",2019,11,19,0,2,"AGO"
+"Angola",2020,26,19,1,3,"AGO"
+"Angola",2021,4,19,0,1,"AGO"
+"Angola",2022,17,19,0,3,"AGO"
+"Angola",2023,1,19,0,1,"AGO"
+"Angola",2024,10,19,0,2,"AGO"
+"Benin",2019,1,7,0,1,"BEN"
+"Benin",2020,1,7,0,1,"BEN"
+"Benin",2021,6,7,0,2,"BEN"
+"Benin",2022,8,7,1,3,"BEN"
+"Benin",2023,20,7,1,4,"BEN"
+"Benin",2024,29,7,1,5,"BEN"
+"Botswana",1990,1,1,1,1,"BWA"
+"Burkina Faso",2016,2,191,0,1,"BFA"
+"Burkina Faso",2017,27,191,0,1,"BFA"
+"Burkina Faso",2018,65,191,0,2,"BFA"
+"Burkina Faso",2019,222,191,1,3,"BFA"
+"Burkina Faso",2020,166,191,0,2,"BFA"
+"Burkina Faso",2021,191,191,1,3,"BFA"
+"Burkina Faso",2022,237,191,1,4,"BFA"
+"Burkina Faso",2023,599,191,1,5,"BFA"
+"Burkina Faso",2024,307,191,1,4,"BFA"
+"Burundi",1990,1,50.5,0,1,"BDI"
+"Burundi",1991,21,50.5,0,2,"BDI"
+"Burundi",1992,3,50.5,0,1,"BDI"
+"Burundi",1993,454,50.5,1,5,"BDI"
+"Burundi",1994,46,50.5,0,2,"BDI"
+"Burundi",1995,126,50.5,1,4,"BDI"
+"Burundi",1996,188,50.5,1,4,"BDI"
+"Burundi",1997,200,50.5,1,5,"BDI"
+"Burundi",1998,122,50.5,1,4,"BDI"
+"Burundi",1999,200,50.5,1,5,"BDI"
+"Burundi",2000,250,50.5,1,5,"BDI"
+"Burundi",2001,188,50.5,1,4,"BDI"
+"Burundi",2002,239,50.5,1,5,"BDI"
+"Burundi",2003,208,50.5,1,5,"BDI"
+"Burundi",2004,89,50.5,1,4,"BDI"
+"Burundi",2005,120,50.5,1,4,"BDI"
+"Burundi",2006,55,50.5,1,3,"BDI"
+"Burundi",2007,25,50.5,0,2,"BDI"
+"Burundi",2008,48,50.5,0,3,"BDI"
+"Burundi",2009,3,50.5,0,1,"BDI"
+"Burundi",2011,6,50.5,0,1,"BDI"
+"Burundi",2012,7,50.5,0,1,"BDI"
+"Burundi",2013,7,50.5,0,1,"BDI"
+"Burundi",2014,9,50.5,0,1,"BDI"
+"Burundi",2015,42,50.5,0,2,"BDI"
+"Burundi",2016,75,50.5,1,3,"BDI"
+"Burundi",2017,43,50.5,0,2,"BDI"
+"Burundi",2018,60,50.5,1,3,"BDI"
+"Burundi",2019,51,50.5,1,3,"BDI"
+"Burundi",2020,78,50.5,1,4,"BDI"
+"Burundi",2021,50,50.5,0,3,"BDI"
+"Burundi",2022,42,50.5,0,2,"BDI"
+"Burundi",2023,39,50.5,0,2,"BDI"
+"Burundi",2024,49,50.5,0,3,"BDI"
+"Cameroon",1990,1,5,0,1,"CMR"
+"Cameroon",1991,1,5,0,1,"CMR"
+"Cameroon",1992,3,5,0,2,"CMR"
+"Cameroon",1993,5,5,1,3,"CMR"
+"Cameroon",1994,7,5,1,3,"CMR"
+"Cameroon",1996,3,5,0,2,"CMR"
+"Cameroon",1998,4,5,0,3,"CMR"
+"Cameroon",2000,4,5,0,3,"CMR"
+"Cameroon",2001,2,5,0,2,"CMR"
+"Cameroon",2004,1,5,0,1,"CMR"
+"Cameroon",2005,3,5,0,2,"CMR"
+"Cameroon",2008,1,5,0,1,"CMR"
+"Cameroon",2009,1,5,0,1,"CMR"
+"Cameroon",2013,1,5,0,2,"CMR"
+"Cameroon",2014,51,5,1,3,"CMR"
+"Cameroon",2015,62,5,1,4,"CMR"
+"Cameroon",2016,97,5,1,4,"CMR"
+"Cameroon",2017,138,5,1,4,"CMR"
+"Cameroon",2018,253,5,1,5,"CMR"
+"Cameroon",2019,248,5,1,5,"CMR"
+"Cameroon",2020,261,5,1,5,"CMR"
+"Cameroon",2021,278,5,1,5,"CMR"
+"Cameroon",2022,225,5,1,4,"CMR"
+"Cameroon",2023,294,5,1,5,"CMR"
+"Cameroon",2024,193,5,1,4,"CMR"
+"Central African Republic",1991,1,42,0,1,"CAF"
+"Central African Republic",1992,1,42,0,1,"CAF"
+"Central African Republic",1993,3,42,0,1,"CAF"
+"Central African Republic",1999,1,42,0,1,"CAF"
+"Central African Republic",2000,1,42,0,1,"CAF"
+"Central African Republic",2001,21,42,0,2,"CAF"
+"Central African Republic",2002,14,42,0,2,"CAF"
+"Central African Republic",2003,5,42,0,2,"CAF"
+"Central African Republic",2004,3,42,0,1,"CAF"
+"Central African Republic",2005,6,42,0,2,"CAF"
+"Central African Republic",2006,42,42,1,3,"CAF"
+"Central African Republic",2007,23,42,0,2,"CAF"
+"Central African Republic",2008,5,42,0,2,"CAF"
+"Central African Republic",2009,61,42,1,3,"CAF"
+"Central African Republic",2010,43,42,1,3,"CAF"
+"Central African Republic",2011,23,42,0,3,"CAF"
+"Central African Republic",2012,31,42,0,3,"CAF"
+"Central African Republic",2013,186,42,1,5,"CAF"
+"Central African Republic",2014,461,42,1,5,"CAF"
+"Central African Republic",2015,150,42,1,5,"CAF"
+"Central African Republic",2016,70,42,1,4,"CAF"
+"Central African Republic",2017,222,42,1,5,"CAF"
+"Central African Republic",2018,88,42,1,4,"CAF"
+"Central African Republic",2019,64,42,1,4,"CAF"
+"Central African Republic",2020,56,42,1,3,"CAF"
+"Central African Republic",2021,167,42,1,5,"CAF"
+"Central African Republic",2022,105,42,1,4,"CAF"
+"Central African Republic",2023,86,42,1,4,"CAF"
+"Central African Republic",2024,92,42,1,4,"CAF"
+"Chad",1989,3,12,0,1,"TCD"
+"Chad",1990,19,12,1,4,"TCD"
+"Chad",1991,6,12,0,1,"TCD"
+"Chad",1992,31,12,1,5,"TCD"
+"Chad",1993,15,12,1,4,"TCD"
+"Chad",1994,17,12,1,4,"TCD"
+"Chad",1995,17,12,1,4,"TCD"
+"Chad",1996,3,12,0,1,"TCD"
+"Chad",1997,8,12,0,2,"TCD"
+"Chad",1998,9,12,0,2,"TCD"
+"Chad",1999,12,12,1,3,"TCD"
+"Chad",2000,14,12,1,3,"TCD"
+"Chad",2001,6,12,0,1,"TCD"
+"Chad",2002,9,12,0,2,"TCD"
+"Chad",2003,4,12,0,1,"TCD"
+"Chad",2004,10,12,0,2,"TCD"
+"Chad",2005,8,12,0,2,"TCD"
+"Chad",2006,62,12,1,5,"TCD"
+"Chad",2007,19,12,1,4,"TCD"
+"Chad",2008,15,12,1,4,"TCD"
+"Chad",2009,12,12,1,3,"TCD"
+"Chad",2010,1,12,0,1,"TCD"
+"Chad",2014,3,12,0,1,"TCD"
+"Chad",2015,29,12,1,5,"TCD"
+"Chad",2016,7,12,0,2,"TCD"
+"Chad",2017,6,12,0,2,"TCD"
+"Chad",2018,12,12,1,3,"TCD"
+"Chad",2019,23,12,1,5,"TCD"
+"Chad",2020,26,12,1,5,"TCD"
+"Chad",2021,13,12,1,3,"TCD"
+"Chad",2022,12,12,1,3,"TCD"
+"Chad",2023,11,12,0,3,"TCD"
+"Chad",2024,24,12,1,5,"TCD"
+"Comoros",1989,2,2,1,1,"COM"
+"Comoros",1997,2,2,1,2,"COM"
+"Comoros",1998,3,2,1,3,"COM"
+"Congo",1992,1,2,0,1,"COG"
+"Congo",1993,10,2,1,4,"COG"
+"Congo",1994,8,2,1,4,"COG"
+"Congo",1995,1,2,0,1,"COG"
+"Congo",1996,2,2,1,2,"COG"
+"Congo",1997,57,2,1,5,"COG"
+"Congo",1998,54,2,1,5,"COG"
+"Congo",1999,48,2,1,5,"COG"
+"Congo",2001,1,2,0,1,"COG"
+"Congo",2002,24,2,1,5,"COG"
+"Congo",2003,6,2,1,4,"COG"
+"Congo",2005,5,2,1,3,"COG"
+"Congo",2007,1,2,0,1,"COG"
+"Congo",2008,1,2,0,1,"COG"
+"Congo",2011,1,2,0,2,"COG"
+"Congo",2012,2,2,1,2,"COG"
+"Congo",2015,1,2,0,2,"COG"
+"Congo",2016,8,2,1,4,"COG"
+"Congo",2017,3,2,1,3,"COG"
+"Congo",2019,2,2,1,3,"COG"
+"Congo",2020,1,2,0,2,"COG"
+"Congo",2022,2,2,1,3,"COG"
+"DR Congo (Zaire)",1989,3,126,0,1,"COD"
+"DR Congo (Zaire)",1990,4,126,0,1,"COD"
+"DR Congo (Zaire)",1991,7,126,0,1,"COD"
+"DR Congo (Zaire)",1992,11,126,0,1,"COD"
+"DR Congo (Zaire)",1993,20,126,0,1,"COD"
+"DR Congo (Zaire)",1994,16,126,0,1,"COD"
+"DR Congo (Zaire)",1995,16,126,0,1,"COD"
+"DR Congo (Zaire)",1996,209,126,1,4,"COD"
+"DR Congo (Zaire)",1997,137,126,1,3,"COD"
+"DR Congo (Zaire)",1998,118,126,0,3,"COD"
+"DR Congo (Zaire)",1999,168,126,1,4,"COD"
+"DR Congo (Zaire)",2000,115,126,0,3,"COD"
+"DR Congo (Zaire)",2001,66,126,0,2,"COD"
+"DR Congo (Zaire)",2002,136,126,1,3,"COD"
+"DR Congo (Zaire)",2003,82,126,0,2,"COD"
+"DR Congo (Zaire)",2004,31,126,0,2,"COD"
+"DR Congo (Zaire)",2005,25,126,0,1,"COD"
+"DR Congo (Zaire)",2006,80,126,0,2,"COD"
+"DR Congo (Zaire)",2007,112,126,0,2,"COD"
+"DR Congo (Zaire)",2008,105,126,0,2,"COD"
+"DR Congo (Zaire)",2009,551,126,1,5,"COD"
+"DR Congo (Zaire)",2010,87,126,0,2,"COD"
+"DR Congo (Zaire)",2011,165,126,1,4,"COD"
+"DR Congo (Zaire)",2012,156,126,1,3,"COD"
+"DR Congo (Zaire)",2013,161,126,1,4,"COD"
+"DR Congo (Zaire)",2014,128,126,1,3,"COD"
+"DR Congo (Zaire)",2015,124,126,0,3,"COD"
+"DR Congo (Zaire)",2016,211,126,1,4,"COD"
+"DR Congo (Zaire)",2017,503,126,1,5,"COD"
+"DR Congo (Zaire)",2018,462,126,1,4,"COD"
+"DR Congo (Zaire)",2019,441,126,1,4,"COD"
+"DR Congo (Zaire)",2020,832,126,1,5,"COD"
+"DR Congo (Zaire)",2021,809,126,1,5,"COD"
+"DR Congo (Zaire)",2022,1199,126,1,5,"COD"
+"DR Congo (Zaire)",2023,828,126,1,5,"COD"
+"DR Congo (Zaire)",2024,783,126,1,5,"COD"
+"Djibouti",1989,1,2,0,1,"DJI"
+"Djibouti",1990,1,2,0,1,"DJI"
+"Djibouti",1991,9,2,1,5,"DJI"
+"Djibouti",1992,11,2,1,5,"DJI"
+"Djibouti",1993,12,2,1,5,"DJI"
+"Djibouti",1994,5,2,1,4,"DJI"
+"Djibouti",1995,4,2,1,4,"DJI"
+"Djibouti",1996,2,2,1,3,"DJI"
+"Djibouti",1997,1,2,0,1,"DJI"
+"Djibouti",1998,2,2,1,3,"DJI"
+"Djibouti",1999,8,2,1,4,"DJI"
+"Djibouti",2008,2,2,1,3,"DJI"
+"Djibouti",2014,1,2,0,2,"DJI"
+"Djibouti",2018,1,2,0,2,"DJI"
+"Djibouti",2021,1,2,0,2,"DJI"
+"Egypt",1990,2,34,0,1,"EGY"
+"Egypt",1992,5,34,0,3,"EGY"
+"Egypt",1993,43,34,1,3,"EGY"
+"Egypt",1994,76,34,1,4,"EGY"
+"Egypt",1995,118,34,1,5,"EGY"
+"Egypt",1996,75,34,1,4,"EGY"
+"Egypt",1997,34,34,1,3,"EGY"
+"Egypt",1998,10,34,0,3,"EGY"
+"Egypt",1999,2,34,0,1,"EGY"
+"Egypt",2000,4,34,0,2,"EGY"
+"Egypt",2004,3,34,0,2,"EGY"
+"Egypt",2005,4,34,0,2,"EGY"
+"Egypt",2006,2,34,0,1,"EGY"
+"Egypt",2008,2,34,0,1,"EGY"
+"Egypt",2009,2,34,0,1,"EGY"
+"Egypt",2010,1,34,0,1,"EGY"
+"Egypt",2011,4,34,0,2,"EGY"
+"Egypt",2012,2,34,0,2,"EGY"
+"Egypt",2013,46,34,1,4,"EGY"
+"Egypt",2014,45,34,1,3,"EGY"
+"Egypt",2015,60,34,1,4,"EGY"
+"Egypt",2016,40,34,1,3,"EGY"
+"Egypt",2017,111,34,1,5,"EGY"
+"Egypt",2018,86,34,1,5,"EGY"
+"Egypt",2019,120,34,1,5,"EGY"
+"Egypt",2020,124,34,1,5,"EGY"
+"Egypt",2021,64,34,1,4,"EGY"
+"Egypt",2022,68,34,1,4,"EGY"
+"Egypt",2023,4,34,0,2,"EGY"
+"Eritrea",1993,1,3.5,0,1,"ERI"
+"Eritrea",1996,2,3.5,0,2,"ERI"
+"Eritrea",1997,9,3.5,1,4,"ERI"
+"Eritrea",1998,3,3.5,0,3,"ERI"
+"Eritrea",1999,13,3.5,1,5,"ERI"
+"Eritrea",2000,10,3.5,1,5,"ERI"
+"Eritrea",2003,9,3.5,1,4,"ERI"
+"Eritrea",2008,1,3.5,0,1,"ERI"
+"Eritrea",2016,1,3.5,0,2,"ERI"
+"Eritrea",2022,4,3.5,1,3,"ERI"
+"Ethiopia",1989,72,80,0,3,"ETH"
+"Ethiopia",1990,110,80,1,4,"ETH"
+"Ethiopia",1991,44,80,0,2,"ETH"
+"Ethiopia",1992,16,80,0,1,"ETH"
+"Ethiopia",1993,13,80,0,1,"ETH"
+"Ethiopia",1994,5,80,0,1,"ETH"
+"Ethiopia",1995,9,80,0,1,"ETH"
+"Ethiopia",1996,5,80,0,1,"ETH"
+"Ethiopia",1997,4,80,0,1,"ETH"
+"Ethiopia",1998,21,80,0,1,"ETH"
+"Ethiopia",1999,42,80,0,2,"ETH"
+"Ethiopia",2000,77,80,0,3,"ETH"
+"Ethiopia",2001,52,80,0,2,"ETH"
+"Ethiopia",2002,124,80,1,4,"ETH"
+"Ethiopia",2003,69,80,0,3,"ETH"
+"Ethiopia",2004,126,80,1,4,"ETH"
+"Ethiopia",2005,90,80,1,3,"ETH"
+"Ethiopia",2006,102,80,1,4,"ETH"
+"Ethiopia",2007,145,80,1,5,"ETH"
+"Ethiopia",2008,83,80,1,3,"ETH"
+"Ethiopia",2009,87,80,1,3,"ETH"
+"Ethiopia",2010,98,80,1,4,"ETH"
+"Ethiopia",2011,92,80,1,4,"ETH"
+"Ethiopia",2012,90,80,1,3,"ETH"
+"Ethiopia",2013,54,80,0,2,"ETH"
+"Ethiopia",2014,27,80,0,1,"ETH"
+"Ethiopia",2015,97,80,1,4,"ETH"
+"Ethiopia",2016,148,80,1,5,"ETH"
+"Ethiopia",2017,41,80,0,2,"ETH"
+"Ethiopia",2018,63,80,0,2,"ETH"
+"Ethiopia",2019,63,80,0,2,"ETH"
+"Ethiopia",2020,263,80,1,5,"ETH"
+"Ethiopia",2021,730,80,1,5,"ETH"
+"Ethiopia",2022,879,80,1,5,"ETH"
+"Ethiopia",2023,579,80,1,5,"ETH"
+"Ethiopia",2024,866,80,1,5,"ETH"
+"Gambia",1996,1,1,1,1,"GMB"
+"Gambia",2004,1,1,1,2,"GMB"
+"Gambia",2005,2,1,1,5,"GMB"
+"Gambia",2012,1,1,1,3,"GMB"
+"Gambia",2024,1,1,1,4,"GMB"
+"Ghana",1991,2,2,1,2,"GHA"
+"Ghana",1992,2,2,1,3,"GHA"
+"Ghana",1993,1,2,0,1,"GHA"
+"Ghana",1994,9,2,1,4,"GHA"
+"Ghana",1995,8,2,1,4,"GHA"
+"Ghana",2000,1,2,0,1,"GHA"
+"Ghana",2001,1,2,0,1,"GHA"
+"Ghana",2002,1,2,0,2,"GHA"
+"Ghana",2008,10,2,1,5,"GHA"
+"Ghana",2009,2,2,1,3,"GHA"
+"Ghana",2010,1,2,0,2,"GHA"
+"Ghana",2022,5,2,1,4,"GHA"
+"Ghana",2023,9,2,1,5,"GHA"
+"Ghana",2024,3,2,1,3,"GHA"
+"Guinea",1994,1,2.5,0,1,"GIN"
+"Guinea",1996,1,2.5,0,1,"GIN"
+"Guinea",1998,3,2.5,1,3,"GIN"
+"Guinea",1999,2,2.5,0,3,"GIN"
+"Guinea",2000,26,2.5,1,5,"GIN"
+"Guinea",2001,4,2.5,1,4,"GIN"
+"Guinea",2005,1,2.5,0,1,"GIN"
+"Guinea",2006,6,2.5,1,5,"GIN"
+"Guinea",2007,21,2.5,1,5,"GIN"
+"Guinea",2009,3,2.5,1,3,"GIN"
+"Guinea",2010,1,2.5,0,1,"GIN"
+"Guinea",2011,1,2.5,0,2,"GIN"
+"Guinea",2012,4,2.5,1,4,"GIN"
+"Guinea",2013,3,2.5,1,3,"GIN"
+"Guinea",2015,1,2.5,0,2,"GIN"
+"Guinea",2019,1,2.5,0,2,"GIN"
+"Guinea",2020,3,2.5,1,4,"GIN"
+"Guinea",2021,1,2.5,0,2,"GIN"
+"Guinea-Bissau",1992,1,2.5,0,1,"GNB"
+"Guinea-Bissau",1998,16,2.5,1,4,"GNB"
+"Guinea-Bissau",1999,3,2.5,1,3,"GNB"
+"Guinea-Bissau",2000,2,2.5,0,2,"GNB"
+"Ivory Coast",1990,2,2.5,0,2,"CIV"
+"Ivory Coast",1991,1,2.5,0,1,"CIV"
+"Ivory Coast",1993,1,2.5,0,1,"CIV"
+"Ivory Coast",1994,1,2.5,0,1,"CIV"
+"Ivory Coast",1995,2,2.5,0,2,"CIV"
+"Ivory Coast",1996,4,2.5,1,3,"CIV"
+"Ivory Coast",1998,1,2.5,0,1,"CIV"
+"Ivory Coast",1999,2,2.5,0,2,"CIV"
+"Ivory Coast",2000,6,2.5,1,4,"CIV"
+"Ivory Coast",2001,2,2.5,0,2,"CIV"
+"Ivory Coast",2002,48,2.5,1,5,"CIV"
+"Ivory Coast",2003,40,2.5,1,5,"CIV"
+"Ivory Coast",2004,28,2.5,1,5,"CIV"
+"Ivory Coast",2005,21,2.5,1,4,"CIV"
+"Ivory Coast",2006,7,2.5,1,4,"CIV"
+"Ivory Coast",2007,3,2.5,1,3,"CIV"
+"Ivory Coast",2008,4,2.5,1,3,"CIV"
+"Ivory Coast",2009,1,2.5,0,1,"CIV"
+"Ivory Coast",2010,21,2.5,1,4,"CIV"
+"Ivory Coast",2011,158,2.5,1,5,"CIV"
+"Ivory Coast",2012,5,2.5,1,4,"CIV"
+"Ivory Coast",2013,2,2.5,0,3,"CIV"
+"Ivory Coast",2016,2,2.5,0,3,"CIV"
+"Ivory Coast",2020,1,2.5,0,2,"CIV"
+"Kenya",1989,3,26,0,1,"KEN"
+"Kenya",1990,1,26,0,1,"KEN"
+"Kenya",1991,2,26,0,1,"KEN"
+"Kenya",1992,26,26,1,3,"KEN"
+"Kenya",1993,18,26,0,2,"KEN"
+"Kenya",1994,13,26,0,2,"KEN"
+"Kenya",1995,4,26,0,1,"KEN"
+"Kenya",1996,9,26,0,2,"KEN"
+"Kenya",1997,11,26,0,2,"KEN"
+"Kenya",1998,15,26,0,2,"KEN"
+"Kenya",1999,8,26,0,1,"KEN"
+"Kenya",2000,18,26,0,2,"KEN"
+"Kenya",2001,18,26,0,2,"KEN"
+"Kenya",2002,5,26,0,1,"KEN"
+"Kenya",2003,2,26,0,1,"KEN"
+"Kenya",2004,4,26,0,1,"KEN"
+"Kenya",2005,29,26,1,3,"KEN"
+"Kenya",2006,22,26,0,3,"KEN"
+"Kenya",2007,52,26,1,4,"KEN"
+"Kenya",2008,117,26,1,5,"KEN"
+"Kenya",2009,25,26,0,3,"KEN"
+"Kenya",2010,28,26,1,3,"KEN"
+"Kenya",2011,26,26,1,3,"KEN"
+"Kenya",2012,71,26,1,5,"KEN"
+"Kenya",2013,49,26,1,4,"KEN"
+"Kenya",2014,85,26,1,5,"KEN"
+"Kenya",2015,42,26,1,4,"KEN"
+"Kenya",2016,48,26,1,4,"KEN"
+"Kenya",2017,107,26,1,5,"KEN"
+"Kenya",2018,69,26,1,5,"KEN"
+"Kenya",2019,51,26,1,4,"KEN"
+"Kenya",2020,65,26,1,5,"KEN"
+"Kenya",2021,54,26,1,4,"KEN"
+"Kenya",2022,31,26,1,4,"KEN"
+"Kenya",2023,57,26,1,5,"KEN"
+"Kenya",2024,30,26,1,3,"KEN"
+"Kingdom of eSwatini (Swaziland)",1989,2,2,1,1,"SWZ"
+"Kingdom of eSwatini (Swaziland)",2019,3,2,1,4,"SWZ"
+"Kingdom of eSwatini (Swaziland)",2020,2,2,1,1,"SWZ"
+"Kingdom of eSwatini (Swaziland)",2021,11,2,1,5,"SWZ"
+"Kingdom of eSwatini (Swaziland)",2022,2,2,1,2,"SWZ"
+"Kingdom of eSwatini (Swaziland)",2023,2,2,1,3,"SWZ"
+"Lesotho",1998,5,5,1,1,"LSO"
+"Liberia",1989,6,22.5,0,2,"LBR"
+"Liberia",1990,138,22.5,1,5,"LBR"
+"Liberia",1991,19,22.5,0,3,"LBR"
+"Liberia",1992,26,22.5,1,3,"LBR"
+"Liberia",1993,47,22.5,1,4,"LBR"
+"Liberia",1994,92,22.5,1,5,"LBR"
+"Liberia",1995,52,22.5,1,4,"LBR"
+"Liberia",1996,31,22.5,1,3,"LBR"
+"Liberia",1997,3,22.5,0,2,"LBR"
+"Liberia",1998,1,22.5,0,1,"LBR"
+"Liberia",1999,3,22.5,0,2,"LBR"
+"Liberia",2000,5,22.5,0,2,"LBR"
+"Liberia",2001,28,22.5,1,3,"LBR"
+"Liberia",2002,43,22.5,1,4,"LBR"
+"Liberia",2003,53,22.5,1,5,"LBR"
+"Liberia",2019,1,22.5,0,1,"LBR"
+"Liberia",2020,2,22.5,0,1,"LBR"
+"Liberia",2024,1,22.5,0,1,"LBR"
+"Libya",2008,1,80,0,1,"LBY"
+"Libya",2011,235,80,1,5,"LBY"
+"Libya",2012,19,80,0,3,"LBY"
+"Libya",2013,18,80,0,2,"LBY"
+"Libya",2014,109,80,1,3,"LBY"
+"Libya",2015,161,80,1,4,"LBY"
+"Libya",2016,184,80,1,5,"LBY"
+"Libya",2017,80,80,1,3,"LBY"
+"Libya",2018,123,80,1,4,"LBY"
+"Libya",2019,186,80,1,5,"LBY"
+"Libya",2020,131,80,1,4,"LBY"
+"Libya",2021,7,80,0,2,"LBY"
+"Libya",2022,7,80,0,2,"LBY"
+"Libya",2023,1,80,0,1,"LBY"
+"Libya",2024,1,80,0,1,"LBY"
+"Madagascar (Malagasy)",2002,32,3,1,5,"MDG"
+"Madagascar (Malagasy)",2009,7,3,1,4,"MDG"
+"Madagascar (Malagasy)",2012,3,3,1,2,"MDG"
+"Madagascar (Malagasy)",2017,1,3,0,1,"MDG"
+"Madagascar (Malagasy)",2019,3,3,1,3,"MDG"
+"Madagascar (Malagasy)",2020,1,3,0,1,"MDG"
+"Mali",1990,15,15,1,3,"MLI"
+"Mali",1991,11,15,0,3,"MLI"
+"Mali",1992,8,15,0,2,"MLI"
+"Mali",1993,1,15,0,1,"MLI"
+"Mali",1994,41,15,1,3,"MLI"
+"Mali",1995,4,15,0,2,"MLI"
+"Mali",1997,1,15,0,1,"MLI"
+"Mali",1999,4,15,0,2,"MLI"
+"Mali",2002,1,15,0,1,"MLI"
+"Mali",2004,2,15,0,1,"MLI"
+"Mali",2005,1,15,0,1,"MLI"
+"Mali",2007,8,15,0,2,"MLI"
+"Mali",2008,10,15,0,3,"MLI"
+"Mali",2009,9,15,0,2,"MLI"
+"Mali",2010,2,15,0,1,"MLI"
+"Mali",2011,4,15,0,2,"MLI"
+"Mali",2012,43,15,1,3,"MLI"
+"Mali",2013,83,15,1,4,"MLI"
+"Mali",2014,30,15,1,3,"MLI"
+"Mali",2015,55,15,1,4,"MLI"
+"Mali",2016,53,15,1,4,"MLI"
+"Mali",2017,127,15,1,4,"MLI"
+"Mali",2018,236,15,1,5,"MLI"
+"Mali",2019,199,15,1,4,"MLI"
+"Mali",2020,234,15,1,5,"MLI"
+"Mali",2021,215,15,1,4,"MLI"
+"Mali",2022,409,15,1,5,"MLI"
+"Mali",2023,320,15,1,5,"MLI"
+"Mali",2024,447,15,1,5,"MLI"
+"Mauritania",1989,15,1,1,5,"MRT"
+"Mauritania",1990,6,1,1,4,"MRT"
+"Mauritania",1992,1,1,1,1,"MRT"
+"Mauritania",2007,1,1,1,1,"MRT"
+"Mauritania",2008,1,1,1,1,"MRT"
+"Mauritania",2009,1,1,1,2,"MRT"
+"Mauritania",2010,1,1,1,2,"MRT"
+"Mauritania",2011,6,1,1,5,"MRT"
+"Mauritania",2012,1,1,1,2,"MRT"
+"Mauritania",2019,1,1,1,3,"MRT"
+"Mauritania",2020,1,1,1,3,"MRT"
+"Mauritania",2023,2,1,1,4,"MRT"
+"Mauritania",2024,1,1,1,3,"MRT"
+"Morocco",1989,6,2,1,4,"MAR"
+"Morocco",1991,2,2,1,2,"MAR"
+"Morocco",2003,2,2,1,2,"MAR"
+"Morocco",2011,1,2,0,1,"MAR"
+"Morocco",2020,1,2,0,1,"MAR"
+"Morocco",2021,7,2,1,5,"MAR"
+"Morocco",2022,4,2,1,4,"MAR"
+"Morocco",2023,2,2,1,3,"MAR"
+"Morocco",2024,2,2,1,3,"MAR"
+"Mozambique",1989,131,32.5,1,4,"MOZ"
+"Mozambique",1990,44,32.5,1,3,"MOZ"
+"Mozambique",1991,58,32.5,1,4,"MOZ"
+"Mozambique",1992,34,32.5,1,3,"MOZ"
+"Mozambique",1993,2,32.5,0,1,"MOZ"
+"Mozambique",1994,2,32.5,0,2,"MOZ"
+"Mozambique",1995,1,32.5,0,1,"MOZ"
+"Mozambique",2004,1,32.5,0,1,"MOZ"
+"Mozambique",2005,2,32.5,0,2,"MOZ"
+"Mozambique",2010,1,32.5,0,1,"MOZ"
+"Mozambique",2012,1,32.5,0,1,"MOZ"
+"Mozambique",2013,18,32.5,0,2,"MOZ"
+"Mozambique",2014,13,32.5,0,2,"MOZ"
+"Mozambique",2016,31,32.5,0,3,"MOZ"
+"Mozambique",2017,3,32.5,0,2,"MOZ"
+"Mozambique",2018,48,32.5,1,3,"MOZ"
+"Mozambique",2019,124,32.5,1,4,"MOZ"
+"Mozambique",2020,213,32.5,1,5,"MOZ"
+"Mozambique",2021,235,32.5,1,5,"MOZ"
+"Mozambique",2022,268,32.5,1,5,"MOZ"
+"Mozambique",2023,100,32.5,1,4,"MOZ"
+"Mozambique",2024,185,32.5,1,5,"MOZ"
+"Namibia",1994,1,1,1,1,"NAM"
+"Namibia",1996,1,1,1,2,"NAM"
+"Namibia",1999,1,1,1,3,"NAM"
+"Namibia",2000,15,1,1,5,"NAM"
+"Namibia",2002,1,1,1,4,"NAM"
+"Niger",1989,1,11,0,1,"NER"
+"Niger",1990,2,11,0,1,"NER"
+"Niger",1991,9,11,0,3,"NER"
+"Niger",1992,11,11,1,3,"NER"
+"Niger",1993,1,11,0,1,"NER"
+"Niger",1994,11,11,1,3,"NER"
+"Niger",1995,7,11,0,2,"NER"
+"Niger",1996,3,11,0,2,"NER"
+"Niger",1997,8,11,0,2,"NER"
+"Niger",1998,2,11,0,1,"NER"
+"Niger",2004,1,11,0,1,"NER"
+"Niger",2007,22,11,1,4,"NER"
+"Niger",2008,13,11,1,3,"NER"
+"Niger",2012,1,11,0,1,"NER"
+"Niger",2013,6,11,0,2,"NER"
+"Niger",2014,2,11,0,2,"NER"
+"Niger",2015,43,11,1,4,"NER"
+"Niger",2016,18,11,1,4,"NER"
+"Niger",2017,16,11,1,3,"NER"
+"Niger",2018,25,11,1,4,"NER"
+"Niger",2019,72,11,1,5,"NER"
+"Niger",2020,68,11,1,4,"NER"
+"Niger",2021,78,11,1,5,"NER"
+"Niger",2022,73,11,1,5,"NER"
+"Niger",2023,97,11,1,5,"NER"
+"Niger",2024,85,11,1,5,"NER"
+"Nigeria",1990,2,45,0,1,"NGA"
+"Nigeria",1991,4,45,0,1,"NGA"
+"Nigeria",1992,12,45,0,1,"NGA"
+"Nigeria",1993,8,45,0,1,"NGA"
+"Nigeria",1994,16,45,0,1,"NGA"
+"Nigeria",1995,1,45,0,1,"NGA"
+"Nigeria",1996,5,45,0,1,"NGA"
+"Nigeria",1997,20,45,0,2,"NGA"
+"Nigeria",1998,31,45,0,2,"NGA"
+"Nigeria",1999,39,45,0,3,"NGA"
+"Nigeria",2000,30,45,0,2,"NGA"
+"Nigeria",2001,41,45,0,3,"NGA"
+"Nigeria",2002,45,45,1,3,"NGA"
+"Nigeria",2003,63,45,1,3,"NGA"
+"Nigeria",2004,87,45,1,3,"NGA"
+"Nigeria",2005,22,45,0,2,"NGA"
+"Nigeria",2006,23,45,0,2,"NGA"
+"Nigeria",2007,22,45,0,2,"NGA"
+"Nigeria",2008,31,45,0,2,"NGA"
+"Nigeria",2009,41,45,0,3,"NGA"
+"Nigeria",2010,92,45,1,3,"NGA"
+"Nigeria",2011,254,45,1,4,"NGA"
+"Nigeria",2012,409,45,1,4,"NGA"
+"Nigeria",2013,334,45,1,4,"NGA"
+"Nigeria",2014,554,45,1,5,"NGA"
+"Nigeria",2015,505,45,1,4,"NGA"
+"Nigeria",2016,434,45,1,4,"NGA"
+"Nigeria",2017,507,45,1,5,"NGA"
+"Nigeria",2018,535,45,1,5,"NGA"
+"Nigeria",2019,524,45,1,5,"NGA"
+"Nigeria",2020,625,45,1,5,"NGA"
+"Nigeria",2021,515,45,1,5,"NGA"
+"Nigeria",2022,471,45,1,4,"NGA"
+"Nigeria",2023,626,45,1,5,"NGA"
+"Nigeria",2024,490,45,1,4,"NGA"
+"Rwanda",1990,37,9,1,4,"RWA"
+"Rwanda",1991,38,9,1,4,"RWA"
+"Rwanda",1992,32,9,1,4,"RWA"
+"Rwanda",1993,42,9,1,5,"RWA"
+"Rwanda",1994,2119,9,1,5,"RWA"
+"Rwanda",1995,17,9,1,3,"RWA"
+"Rwanda",1996,41,9,1,4,"RWA"
+"Rwanda",1997,131,9,1,5,"RWA"
+"Rwanda",1998,67,9,1,5,"RWA"
+"Rwanda",1999,1,9,0,1,"RWA"
+"Rwanda",2001,22,9,1,3,"RWA"
+"Rwanda",2004,1,9,0,1,"RWA"
+"Rwanda",2009,1,9,0,1,"RWA"
+"Rwanda",2011,1,9,0,1,"RWA"
+"Rwanda",2012,4,9,0,2,"RWA"
+"Rwanda",2013,3,9,0,2,"RWA"
+"Rwanda",2016,26,9,1,3,"RWA"
+"Rwanda",2017,9,9,1,3,"RWA"
+"Rwanda",2018,4,9,0,3,"RWA"
+"Rwanda",2019,1,9,0,1,"RWA"
+"Rwanda",2021,2,9,0,2,"RWA"
+"Rwanda",2022,3,9,0,2,"RWA"
+"Rwanda",2024,2,9,0,2,"RWA"
+"Senegal",1989,11,9.5,1,3,"SEN"
+"Senegal",1990,14,9.5,1,4,"SEN"
+"Senegal",1991,7,9.5,0,2,"SEN"
+"Senegal",1992,16,9.5,1,4,"SEN"
+"Senegal",1993,30,9.5,1,5,"SEN"
+"Senegal",1995,39,9.5,1,5,"SEN"
+"Senegal",1996,2,9.5,0,1,"SEN"
+"Senegal",1997,32,9.5,1,5,"SEN"
+"Senegal",1998,31,9.5,1,5,"SEN"
+"Senegal",1999,9,9.5,0,3,"SEN"
+"Senegal",2000,23,9.5,1,5,"SEN"
+"Senegal",2001,12,9.5,1,4,"SEN"
+"Senegal",2002,15,9.5,1,4,"SEN"
+"Senegal",2003,5,9.5,0,2,"SEN"
+"Senegal",2004,1,9.5,0,1,"SEN"
+"Senegal",2005,2,9.5,0,1,"SEN"
+"Senegal",2006,4,9.5,0,2,"SEN"
+"Senegal",2008,3,9.5,0,2,"SEN"
+"Senegal",2009,11,9.5,1,3,"SEN"
+"Senegal",2010,9,9.5,0,3,"SEN"
+"Senegal",2011,14,9.5,1,4,"SEN"
+"Senegal",2012,10,9.5,1,3,"SEN"
+"Senegal",2013,4,9.5,0,2,"SEN"
+"Senegal",2018,1,9.5,0,1,"SEN"
+"Senegal",2020,1,9.5,0,1,"SEN"
+"Senegal",2021,2,9.5,0,1,"SEN"
+"Sierra Leone",1991,128,100,1,3,"SLE"
+"Sierra Leone",1992,64,100,0,2,"SLE"
+"Sierra Leone",1993,68,100,0,2,"SLE"
+"Sierra Leone",1994,164,100,1,4,"SLE"
+"Sierra Leone",1995,197,100,1,4,"SLE"
+"Sierra Leone",1996,100,100,1,3,"SLE"
+"Sierra Leone",1997,137,100,1,3,"SLE"
+"Sierra Leone",1998,360,100,1,5,"SLE"
+"Sierra Leone",1999,199,100,1,5,"SLE"
+"Sierra Leone",2000,59,100,0,2,"SLE"
+"Sierra Leone",2001,19,100,0,1,"SLE"
+"Sierra Leone",2002,1,100,0,1,"SLE"
+"Sierra Leone",2021,1,100,0,1,"SLE"
+"Somalia",1989,33,133,0,2,"SOM"
+"Somalia",1990,52,133,0,2,"SOM"
+"Somalia",1991,20,133,0,1,"SOM"
+"Somalia",1992,18,133,0,1,"SOM"
+"Somalia",1993,20,133,0,1,"SOM"
+"Somalia",1994,37,133,0,2,"SOM"
+"Somalia",1995,69,133,0,3,"SOM"
+"Somalia",1996,92,133,0,3,"SOM"
+"Somalia",1997,27,133,0,1,"SOM"
+"Somalia",1998,18,133,0,1,"SOM"
+"Somalia",1999,42,133,0,2,"SOM"
+"Somalia",2000,27,133,0,1,"SOM"
+"Somalia",2001,31,133,0,1,"SOM"
+"Somalia",2002,61,133,0,2,"SOM"
+"Somalia",2003,49,133,0,2,"SOM"
+"Somalia",2004,52,133,0,2,"SOM"
+"Somalia",2005,26,133,0,1,"SOM"
+"Somalia",2006,79,133,0,3,"SOM"
+"Somalia",2007,294,133,1,4,"SOM"
+"Somalia",2008,288,133,1,4,"SOM"
+"Somalia",2009,255,133,1,3,"SOM"
+"Somalia",2010,313,133,1,4,"SOM"
+"Somalia",2011,271,133,1,3,"SOM"
+"Somalia",2012,446,133,1,5,"SOM"
+"Somalia",2013,383,133,1,5,"SOM"
+"Somalia",2014,406,133,1,5,"SOM"
+"Somalia",2015,319,133,1,4,"SOM"
+"Somalia",2016,377,133,1,4,"SOM"
+"Somalia",2017,285,133,1,4,"SOM"
+"Somalia",2018,509,133,1,5,"SOM"
+"Somalia",2019,426,133,1,5,"SOM"
+"Somalia",2020,394,133,1,5,"SOM"
+"Somalia",2021,390,133,1,5,"SOM"
+"Somalia",2022,338,133,1,4,"SOM"
+"Somalia",2023,247,133,1,3,"SOM"
+"Somalia",2024,174,133,1,3,"SOM"
+"South Africa",1989,279,11.5,1,4,"ZAF"
+"South Africa",1990,562,11.5,1,5,"ZAF"
+"South Africa",1991,448,11.5,1,5,"ZAF"
+"South Africa",1992,574,11.5,1,5,"ZAF"
+"South Africa",1993,576,11.5,1,5,"ZAF"
+"South Africa",1994,263,11.5,1,4,"ZAF"
+"South Africa",1995,39,11.5,1,4,"ZAF"
+"South Africa",1996,37,11.5,1,4,"ZAF"
+"South Africa",1997,20,11.5,1,3,"ZAF"
+"South Africa",1998,23,11.5,1,4,"ZAF"
+"South Africa",1999,11,11.5,0,3,"ZAF"
+"South Africa",2000,1,11.5,0,1,"ZAF"
+"South Africa",2002,3,11.5,0,1,"ZAF"
+"South Africa",2004,4,11.5,0,2,"ZAF"
+"South Africa",2010,1,11.5,0,1,"ZAF"
+"South Africa",2015,1,11.5,0,1,"ZAF"
+"South Africa",2016,3,11.5,0,2,"ZAF"
+"South Africa",2018,3,11.5,0,2,"ZAF"
+"South Africa",2019,6,11.5,0,3,"ZAF"
+"South Africa",2020,18,11.5,1,3,"ZAF"
+"South Africa",2021,12,11.5,1,3,"ZAF"
+"South Africa",2022,4,11.5,0,2,"ZAF"
+"South Africa",2023,5,11.5,0,2,"ZAF"
+"South Africa",2024,2,11.5,0,1,"ZAF"
+"South Sudan",2011,31,65.5,0,1,"SSD"
+"South Sudan",2012,59,65.5,0,2,"SSD"
+"South Sudan",2013,99,65.5,1,4,"SSD"
+"South Sudan",2014,125,65.5,1,5,"SSD"
+"South Sudan",2015,99,65.5,1,4,"SSD"
+"South Sudan",2016,69,65.5,1,3,"SSD"
+"South Sudan",2017,116,65.5,1,4,"SSD"
+"South Sudan",2018,157,65.5,1,5,"SSD"
+"South Sudan",2019,68,65.5,1,3,"SSD"
+"South Sudan",2020,63,65.5,0,3,"SSD"
+"South Sudan",2021,55,65.5,0,2,"SSD"
+"South Sudan",2022,35,65.5,0,2,"SSD"
+"South Sudan",2023,10,65.5,0,1,"SSD"
+"South Sudan",2024,15,65.5,0,1,"SSD"
+"Sudan",1989,33,91,0,1,"SDN"
+"Sudan",1990,63,91,0,1,"SDN"
+"Sudan",1991,30,91,0,1,"SDN"
+"Sudan",1992,57,91,0,1,"SDN"
+"Sudan",1993,78,91,0,3,"SDN"
+"Sudan",1994,19,91,0,1,"SDN"
+"Sudan",1995,43,91,0,1,"SDN"
+"Sudan",1996,54,91,0,1,"SDN"
+"Sudan",1997,90,91,0,3,"SDN"
+"Sudan",1998,126,91,1,4,"SDN"
+"Sudan",1999,64,91,0,2,"SDN"
+"Sudan",2000,71,91,0,2,"SDN"
+"Sudan",2001,74,91,0,2,"SDN"
+"Sudan",2002,54,91,0,1,"SDN"
+"Sudan",2003,103,91,1,4,"SDN"
+"Sudan",2004,224,91,1,5,"SDN"
+"Sudan",2005,87,91,0,3,"SDN"
+"Sudan",2006,109,91,1,4,"SDN"
+"Sudan",2007,71,91,0,2,"SDN"
+"Sudan",2008,98,91,1,3,"SDN"
+"Sudan",2009,125,91,1,4,"SDN"
+"Sudan",2010,94,91,1,3,"SDN"
+"Sudan",2011,165,91,1,5,"SDN"
+"Sudan",2012,115,91,1,4,"SDN"
+"Sudan",2013,141,91,1,4,"SDN"
+"Sudan",2014,160,91,1,5,"SDN"
+"Sudan",2015,365,91,1,5,"SDN"
+"Sudan",2016,250,91,1,5,"SDN"
+"Sudan",2017,63,91,0,2,"SDN"
+"Sudan",2018,101,91,1,3,"SDN"
+"Sudan",2019,92,91,1,3,"SDN"
+"Sudan",2020,70,91,0,2,"SDN"
+"Sudan",2021,77,91,0,2,"SDN"
+"Sudan",2022,110,91,1,4,"SDN"
+"Sudan",2023,375,91,1,5,"SDN"
+"Sudan",2024,705,91,1,5,"SDN"
+"Tanzania",1992,1,1,1,1,"TZA"
+"Tanzania",1996,1,1,1,1,"TZA"
+"Tanzania",1997,1,1,1,1,"TZA"
+"Tanzania",1999,1,1,1,2,"TZA"
+"Tanzania",2001,7,1,1,5,"TZA"
+"Tanzania",2007,1,1,1,2,"TZA"
+"Tanzania",2012,1,1,1,2,"TZA"
+"Tanzania",2014,1,1,1,3,"TZA"
+"Tanzania",2017,1,1,1,3,"TZA"
+"Tanzania",2018,1,1,1,3,"TZA"
+"Tanzania",2019,3,1,1,4,"TZA"
+"Tanzania",2020,17,1,1,5,"TZA"
+"Tanzania",2021,8,1,1,5,"TZA"
+"Tanzania",2022,3,1,1,4,"TZA"
+"Tanzania",2024,5,1,1,4,"TZA"
+"Togo",1991,4,4,1,2,"TGO"
+"Togo",1992,2,4,0,1,"TGO"
+"Togo",1993,3,4,0,2,"TGO"
+"Togo",1998,4,4,1,3,"TGO"
+"Togo",2005,93,4,1,5,"TGO"
+"Togo",2019,1,4,0,1,"TGO"
+"Togo",2022,8,4,1,3,"TGO"
+"Togo",2023,20,4,1,4,"TGO"
+"Togo",2024,15,4,1,4,"TGO"
+"Tunisia",2002,1,8.5,0,1,"TUN"
+"Tunisia",2011,2,8.5,0,2,"TUN"
+"Tunisia",2012,2,8.5,0,2,"TUN"
+"Tunisia",2013,8,8.5,0,3,"TUN"
+"Tunisia",2014,22,8.5,1,5,"TUN"
+"Tunisia",2015,26,8.5,1,5,"TUN"
+"Tunisia",2016,15,8.5,1,4,"TUN"
+"Tunisia",2017,10,8.5,1,4,"TUN"
+"Tunisia",2018,13,8.5,1,4,"TUN"
+"Tunisia",2019,9,8.5,1,3,"TUN"
+"Tunisia",2020,5,8.5,0,2,"TUN"
+"Tunisia",2021,9,8.5,1,3,"TUN"
+"Tunisia",2022,1,8.5,0,1,"TUN"
+"Tunisia",2023,1,8.5,0,1,"TUN"
+"Uganda",1989,24,20.5,1,3,"UGA"
+"Uganda",1990,34,20.5,1,4,"UGA"
+"Uganda",1991,21,20.5,1,3,"UGA"
+"Uganda",1992,4,20.5,0,2,"UGA"
+"Uganda",1994,18,20.5,0,3,"UGA"
+"Uganda",1995,20,20.5,0,3,"UGA"
+"Uganda",1996,120,20.5,1,5,"UGA"
+"Uganda",1997,77,20.5,1,4,"UGA"
+"Uganda",1998,121,20.5,1,5,"UGA"
+"Uganda",1999,89,20.5,1,4,"UGA"
+"Uganda",2000,116,20.5,1,4,"UGA"
+"Uganda",2001,55,20.5,1,4,"UGA"
+"Uganda",2002,164,20.5,1,5,"UGA"
+"Uganda",2003,194,20.5,1,5,"UGA"
+"Uganda",2004,251,20.5,1,5,"UGA"
+"Uganda",2005,221,20.5,1,5,"UGA"
+"Uganda",2006,98,20.5,1,4,"UGA"
+"Uganda",2007,21,20.5,1,3,"UGA"
+"Uganda",2008,8,20.5,0,2,"UGA"
+"Uganda",2009,6,20.5,0,2,"UGA"
+"Uganda",2010,1,20.5,0,1,"UGA"
+"Uganda",2014,1,20.5,0,1,"UGA"
+"Uganda",2016,2,20.5,0,1,"UGA"
+"Uganda",2017,1,20.5,0,1,"UGA"
+"Uganda",2018,2,20.5,0,1,"UGA"
+"Uganda",2019,2,20.5,0,2,"UGA"
+"Uganda",2021,12,20.5,0,2,"UGA"
+"Uganda",2022,6,20.5,0,2,"UGA"
+"Uganda",2023,12,20.5,0,3,"UGA"
+"Uganda",2024,1,20.5,0,1,"UGA"
+"Zambia",1989,25,2,1,5,"ZMB"
+"Zambia",1990,9,2,1,4,"ZMB"
+"Zambia",1993,1,2,0,1,"ZMB"
+"Zambia",2000,1,2,0,2,"ZMB"
+"Zambia",2001,2,2,1,3,"ZMB"
+"Zimbabwe (Rhodesia)",1989,3,1,1,4,"ZWE"
+"Zimbabwe (Rhodesia)",1990,3,1,1,5,"ZWE"
+"Zimbabwe (Rhodesia)",1995,2,1,1,3,"ZWE"
+"Zimbabwe (Rhodesia)",1998,1,1,1,1,"ZWE"
+"Zimbabwe (Rhodesia)",1999,1,1,1,1,"ZWE"
+"Zimbabwe (Rhodesia)",2001,1,1,1,1,"ZWE"
+"Zimbabwe (Rhodesia)",2003,1,1,1,2,"ZWE"
+"Zimbabwe (Rhodesia)",2007,2,1,1,4,"ZWE"
+"Zimbabwe (Rhodesia)",2008,40,1,1,5,"ZWE"
+"Zimbabwe (Rhodesia)",2009,1,1,1,2,"ZWE"
+"Zimbabwe (Rhodesia)",2011,1,1,1,2,"ZWE"
+"Zimbabwe (Rhodesia)",2012,1,1,1,3,"ZWE"
+"Zimbabwe (Rhodesia)",2018,2,1,1,4,"ZWE"
+"Zimbabwe (Rhodesia)",2019,8,1,1,5,"ZWE"
+"Zimbabwe (Rhodesia)",2020,1,1,1,3,"ZWE"

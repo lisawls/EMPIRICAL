@@ -6,8 +6,8 @@ library(knitr)
 library(kableExtra)
 
 # 1. Load data----
-aid_africa <- read_csv("processed_data_aid_africa.csv")
-aid_shares_cty_year <- read_csv("processed_aid_africa_share.csv")
+aid_africa <- read_csv("processed_data_stats_aid_africa.csv")
+aid_shares_cty_year <- read_csv("processed_stats_aid_africa_share.csv")
 
 output_dir <- "stats_des"
 

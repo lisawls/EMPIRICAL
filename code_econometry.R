@@ -21,34 +21,33 @@
 
 # Load econometrics package for fixed-effects and IV estimation
 library(fixest)
-library(countrycode)
 library(readr)
 library(ivreg)
 
-conflict <- read_csv("data_selected_countries.csv") %>%
-  # filter(year < 2022) %>% 
-  # year > 2002) %>% 
-  mutate(iso3 = countrycode(country, "country.name", "iso3c"))
-
-shift_share_wide <- read_csv("shift_share_wide.csv")
+conflict <- read_csv("processed_data_conflict.csv")
+aid <- read_csv("processed_data_regression_aid.csv")
+shif_share <- read_csv("processed_data_regression_shift_share.csv")
 
 merge_final <- conflict %>%
-  left_join(shift_share_wide, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
-  select(-recipient)
+  left_join(aid, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
+
+merge_final_shifshare <- conflict %>%
+  left_join(shif_share, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
 
 ############################################################
 # Dictionary for clean variable names in tables
 ############################################################
 
 var_dict <- c(
-  aid_us_dev = "US Development Food Aid",
-  aid_us_hum = "US Humanitarian Aid",
   iv_dev     = "Shift-Share IV (Development)",
   iv_hum     = "Shift-Share IV (Humanitarian)",
   iso3       = "Country FE",
   year       = "Year FE",
-  nb_event = "Number of Conflict Events"
-)
+  nb_event = "Number of Conflict Events",
+  dummy_sup_mediane = "Indicator for above-median conflict events",
+  aid_food_us = "Development food aid (USD)",
+  aid_hum_us = "Humanitarian food aid (USD)",
+  aid_total_us = "Both aid (USD)")
 
 
 ############################################################
@@ -65,19 +64,33 @@ var_dict <- c(
 
 # OLS regression for development food aid
 ols_dev <- feols(
-  nb_event ~ aid_us_dev | iso3 + year,
+  dummy_sup_mediane ~ aid_food_us | iso3 + year,
   data = merge_final,
   cluster = ~iso3
 )
-summary(ols_dev)
 
 # OLS regression for humanitarian aid
 ols_hum <- feols(
-  nb_event ~ aid_us_hum | iso3 + year,
+  dummy_sup_mediane ~ aid_hum_us | iso3 + year,
   data = merge_final,
-  cluster = ~iso3
+  cluster = ~iso3)
+
+# OLS regression for both aid
+ols_both <- feols(
+  dummy_sup_mediane ~ aid_total_us | iso3 + year,
+  data = merge_final,
+  cluster = ~iso3)
+
+
+etable(
+  ols_dev, ols_hum, ols_both,
+  dict = var_dict,
+  tex = TRUE,
+  title = "Aid and Conflict: Baseline OLS Estimates",
+  label = "tab:aid_ols",
+  digits = 3,
+  fitstat = ~ n + r2
 )
-summary(ols_hum)
 
 
 ############################################################
@@ -189,7 +202,7 @@ etable(
 ############################################################
 
 etable(
-  ols_dev, ols_hum,
+  ols_dev, ols_hum, ols_both
   dict = var_dict,
   tex = TRUE,
   title = "OLS Estimates: US Aid and Conflict Events",
