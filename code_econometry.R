@@ -29,7 +29,9 @@ aid <- read_csv("processed_data_regression_aid.csv")
 shif_share <- read_csv("processed_data_regression_shift_share.csv")
 
 merge_final <- conflict %>%
-  left_join(aid, by = c("iso3" = "recipient_iso3", "year" = "year")) 
+  left_join(aid, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
+  mutate(shock_2017 = if_else(year == 2017, 1, 0)) %>% 
+  mutate(shock_2018 = if_else(year == 2018, 1, 0))
 
 merge_final_shifshare <- conflict %>%
   left_join(shif_share, by = c("iso3" = "recipient_iso3", "year" = "year"))
@@ -47,7 +49,9 @@ var_dict <- c(
   dummy_sup_mediane = "Indicator for above-median conflict events",
   aid_food_us = "Development food aid (USD)",
   aid_hum_us = "Humanitarian aid (USD)",
-  aid_total_us = "Both aid (USD)")
+  aid_total_us = "Both aid (USD)",
+  shock_2017 = "Interaction term: 2017 aid",
+  shock_2018 = "Interaction term: 2018 aid")
 
 
 ############################################################
@@ -66,8 +70,7 @@ var_dict <- c(
 ols_dev <- feols(
   dummy_sup_mediane ~ aid_food_us | iso3 + year,
   data = merge_final,
-  cluster = ~iso3
-)
+  cluster = ~iso3)
 
 # OLS regression for humanitarian aid
 ols_hum <- feols(
@@ -81,7 +84,6 @@ ols_both <- feols(
   data = merge_final,
   cluster = ~iso3)
 
-
 etable(
   ols_dev, ols_hum, ols_both,
   dict = var_dict,
@@ -89,9 +91,30 @@ etable(
   title = "Aid and Conflict: Baseline OLS Estimates",
   label = "tab:aid_ols",
   digits = 3,
-  fitstat = ~ n + r2
-)
+  fitstat = ~ n + r2)
 
+###
+ols_dev_2017 <- feols(
+  dummy_sup_mediane ~ aid_food_us * shock_2018 | iso3 + year,
+  data = merge_final,
+  cluster = ~iso3)
+ols_hum_2017 <- feols(
+  dummy_sup_mediane ~ aid_hum_us * shock_2018 | iso3 + year,
+  data = merge_final,
+  cluster = ~iso3)
+ols_both_2017 <- feols(
+  dummy_sup_mediane ~ aid_total_us * shock_2018 | iso3 + year,
+  data = merge_final,
+  cluster = ~iso3)
+
+etable(
+  ols_dev_2017, ols_hum_2017, ols_both_2017,
+  dict = var_dict,
+  tex = TRUE,
+  title = "Aid and Conflict: Baseline OLS Estimates",
+  label = "tab:aid_ols",
+  digits = 3,
+  fitstat = ~ n + r2)
 
 ############################################################
 # 2. FIRST STAGE REGRESSIONS
