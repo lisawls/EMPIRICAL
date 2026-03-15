@@ -29,10 +29,10 @@ aid <- read_csv("processed_data_regression_aid.csv")
 shif_share <- read_csv("processed_data_regression_shift_share.csv")
 
 merge_final <- conflict %>%
-  left_join(aid, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
+  left_join(aid, by = c("iso3" = "recipient_iso3", "year" = "year")) 
 
 merge_final_shifshare <- conflict %>%
-  left_join(shif_share, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
+  left_join(shif_share, by = c("iso3" = "recipient_iso3", "year" = "year"))
 
 ############################################################
 # Dictionary for clean variable names in tables
