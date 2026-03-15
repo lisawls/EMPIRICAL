@@ -95,8 +95,8 @@ aid_clean <- aid_raw %>%
       .default = Mesure
     ),
     year = as.integer(TIME_PERIOD),
-    amount = if_else(coalesce(OBS_VALUE, 0) < 0, NA_real_, coalesce(OBS_VALUE, 0)),
-    # amount = coalesce(OBS_VALUE, 0),
+    # amount = if_else(coalesce(OBS_VALUE, 0) < 0, NA_real_, coalesce(OBS_VALUE, 0)),
+    amount = coalesce(OBS_VALUE, 0),
     is_usa = DONOR == "USA"
   ) %>%
   left_join(iso_lookup, by = "recipient_iso3")
