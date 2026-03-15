@@ -23,13 +23,16 @@
 library(fixest)
 library(readr)
 library(ivreg)
+library(dplyr)
 
 conflict <- read_csv("processed_data_conflict.csv")
 aid <- read_csv("processed_data_regression_aid.csv")
+us_share <- read_csv("processed_stats_aid_africa_share.csv")
 shif_share <- read_csv("processed_data_regression_shift_share.csv")
 
+
 merge_final <- conflict %>%
-  left_join(aid, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
+  left_join(us_share, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
   mutate(shock_2017 = if_else(year == 2017, 1, 0)) %>% 
   mutate(shock_2018 = if_else(year == 2018, 1, 0))
 
@@ -50,6 +53,9 @@ var_dict <- c(
   aid_food_us = "Development food aid (USD)",
   aid_hum_us = "Humanitarian aid (USD)",
   aid_total_us = "Both aid (USD)",
+  share_us_food = "US share of development food aid (%)",
+  share_us_hum = "US share of humanitarian aid (%)",
+  share_us_total = "US share of combined aid (%)",
   shock_2017 = "Interaction term: 2017 aid",
   shock_2018 = "Interaction term: 2018 aid")
 
@@ -68,19 +74,19 @@ var_dict <- c(
 
 # OLS regression for development food aid
 ols_dev <- feols(
-  dummy_sup_mediane ~ aid_food_us | iso3 + year,
+  dummy_sup_mediane ~ share_us_food | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 
 # OLS regression for humanitarian aid
 ols_hum <- feols(
-  dummy_sup_mediane ~ aid_hum_us | iso3 + year,
+  dummy_sup_mediane ~ share_us_hum | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 
 # OLS regression for both aid
 ols_both <- feols(
-  dummy_sup_mediane ~ aid_total_us | iso3 + year,
+  dummy_sup_mediane ~ share_us_total | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 
@@ -95,15 +101,15 @@ etable(
 
 ###
 ols_dev_2017 <- feols(
-  dummy_sup_mediane ~ aid_food_us * shock_2018 | iso3 + year,
+  dummy_sup_mediane ~ share_us_food * shock_2017 | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 ols_hum_2017 <- feols(
-  dummy_sup_mediane ~ aid_hum_us * shock_2018 | iso3 + year,
+  dummy_sup_mediane ~ share_us_hum * shock_2017 | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 ols_both_2017 <- feols(
-  dummy_sup_mediane ~ aid_total_us * shock_2018 | iso3 + year,
+  dummy_sup_mediane ~ share_us_total * shock_2017 | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 
