@@ -46,7 +46,7 @@ var_dict <- c(
   nb_event = "Number of Conflict Events",
   dummy_sup_mediane = "Indicator for above-median conflict events",
   aid_food_us = "Development food aid (USD)",
-  aid_hum_us = "Humanitarian food aid (USD)",
+  aid_hum_us = "Humanitarian aid (USD)",
   aid_total_us = "Both aid (USD)")
 
 
