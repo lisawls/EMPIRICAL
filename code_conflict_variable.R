@@ -10,7 +10,8 @@ library(knitr)
 #Step 1: Download and filter the dataset
 ########################################
 data_africa <- readRDS("original_data_conflict.rds") %>%
-  filter(region == "Africa" | country == "Egypt")
+  filter(region == "Africa" | country == "Egypt") %>% 
+  filter(year > 1994)
 
 
 #Step 2: Check for patterns in conflict evolution
@@ -64,7 +65,7 @@ events_by_country_year <- events_by_country_year %>%
   mutate(
     quintile_nb_event = ntile(nb_event, 5)) %>%
   ungroup() %>% 
-  mutate(iso3 = countrycode(country, "country.name", "iso3c"))
+  mutate(iso3 = countrycode(country, "country.name", "iso3c")) 
 
 write.csv(events_by_country_year,"processed_data_conflict.csv",row.names = FALSE)
 
