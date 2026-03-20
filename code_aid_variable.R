@@ -56,18 +56,6 @@ aid_raw <- read_csv("original_data_aid.csv")
 # Build a recipient lookup table:
 # - detect whether each recipient code corresponds to a country or an aggregate
 # - recover continent information for sovereign countries
-iso_lookup <- tibble(recipient_iso3 = unique(aid_raw$RECIPIENT)) %>%
-  mutate(
-    recipient_name_check = countrycode(recipient_iso3, "iso3c", "country.name.en"),
-    continent = countrycode(recipient_iso3, "iso3c", "continent"),
-    recipient_type = case_when(
-      recipient_iso3 == "XKV" ~ "country",
-      !is.na(recipient_name_check) ~ "country",
-      TRUE ~ "aggregate"
-    ),
-    continent = if_else(recipient_type == "country", continent, NA_character_)
-  ) %>%
-  select(-recipient_name_check)
 
 iso_lookup <- tibble(recipient_iso3 = unique(aid_raw$RECIPIENT)) %>%
   mutate(
@@ -210,6 +198,45 @@ pre_shares <- tot_aid_country_africa %>%
        all_pre_total > 0 & us_pre_total >= 0,
        us_pre_total / all_pre_total,
        NA_real_))
+
+
+pays_ayant_recu_aide_us_total <- tot_aid_country_africa %>%
+  group_by(recipient_iso3, recipient) %>%
+  summarise(
+    total_us_recu = sum(aid_total_us, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(total_us_recu > 0)
+
+pays_ayant_recu_aide_us_hum <- tot_aid_country_africa %>%
+  group_by(recipient_iso3, recipient) %>%
+  summarise(
+    hum_us_recu = sum(aid_hum_us, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(hum_us_recu > 0)
+
+
+pays_ayant_recu_aide_us_food <- tot_aid_country_africa %>%
+  group_by(recipient_iso3, recipient) %>%
+  summarise(
+    food_us_recu = sum(aid_food_us, na.rm = TRUE),
+    .groups = "drop"
+  ) %>%
+  filter(food_us_recu > 0)
+
+tableau_pays_aide_us <- pays_ayant_recu_aide_us_total %>%
+  full_join(pays_ayant_recu_aide_us_hum, by = c("recipient_iso3", "recipient")) %>%
+  full_join(pays_ayant_recu_aide_us_food, by = c("recipient_iso3", "recipient")) %>%
+  mutate(
+    total_us = !is.na(total_us_recu),
+    hum_us = !is.na(hum_us_recu),
+    food_us = !is.na(food_us_recu)
+  ) %>%
+  select(recipient_iso3, recipient, total_us, hum_us, food_us)
+
+
+write.csv(tableau_pays_aide_us, "processed_data_list_pays.csv", row.names = FALSE)
 
 # 6) Construct the shock term----
  # 1. Compute the aggregate US share of aid in each year across all African recipient countries:

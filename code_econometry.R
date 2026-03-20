@@ -30,11 +30,11 @@ aid <- read_csv("processed_data_regression_aid.csv")
 us_share <- read_csv("processed_stats_aid_africa_share.csv")
 shif_share <- read_csv("processed_data_regression_shift_share.csv")
 
-
 merge_final <- conflict %>%
   left_join(us_share, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
   mutate(shock_2017 = if_else(year == 2017, 1, 0)) %>% 
-  mutate(shock_2018 = if_else(year == 2018, 1, 0))
+  mutate(shock_2018 = if_else(year == 2018, 1, 0)) %>% 
+  mutate(shock_2009 = if_else(year == 2010, 1, 0))
 
 merge_final_shifshare <- conflict %>%
   left_join(shif_share, by = c("iso3" = "recipient_iso3", "year" = "year"))
@@ -57,8 +57,8 @@ var_dict <- c(
   share_us_hum = "US share of humanitarian aid (%)",
   share_us_total = "US share of combined aid (%)",
   shock_2017 = "Interaction term: 2017 aid",
-  shock_2018 = "Interaction term: 2018 aid")
-
+  shock_2018 = "Interaction term: 2018 aid",
+  shock_2009 = "Interaction term: 2009 aid")
 
 ############################################################
 # 1. OLS BASELINE REGRESSIONS
@@ -101,15 +101,15 @@ etable(
 
 ###
 ols_dev_2017 <- feols(
-  dummy_sup_mediane ~ share_us_food * shock_2017 | iso3 + year,
+  dummy_sup_mediane ~ share_us_food * shock_2009 | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 ols_hum_2017 <- feols(
-  dummy_sup_mediane ~ share_us_hum * shock_2017 | iso3 + year,
+  dummy_sup_mediane ~ share_us_hum * shock_2009 | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 ols_both_2017 <- feols(
-  dummy_sup_mediane ~ share_us_total * shock_2017 | iso3 + year,
+  dummy_sup_mediane ~ share_us_total * shock_2009 | iso3 + year,
   data = merge_final,
   cluster = ~iso3)
 

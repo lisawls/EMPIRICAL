@@ -5,6 +5,7 @@
 library(dplyr)
 library(countrycode)
 library(ggplot2)
+library(knitr)
 
 #Step 1: Download and filter the dataset
 ########################################
@@ -30,22 +31,38 @@ events_by_country_year <- datagood %>%
 #Step 4: Built the relative nb of conflict per country per year
 ###############################################################
 
-#mediane per country for the whole period
-events_by_country_year <- events_by_country_year %>%
+table_mediane_pays <- events_by_country_year %>%
   group_by(country) %>%
-  mutate(mediane_nb_conflit = median(nb_event, na.rm = TRUE)) %>%
-  ungroup()
+  summarise(mediane_nb_conflit = median(nb_event, na.rm = TRUE), .groups = "drop") %>%
+  filter(mediane_nb_conflit >= 5) %>%
+  arrange(country)
+
+writeLines(
+  kable(
+    table_mediane_pays,
+    format = "latex",
+    booktabs = TRUE,
+    col.names = c("Country", "Median number of events"),
+    caption = "Median number of events by country"
+  ),
+  "table_mediane_pays.tex"
+)
+
+#Keep only countries for which mediane >5 
+events_by_country_year <- events_by_country_year %>%
+  left_join(table_mediane_pays, by = "country") %>%
+  filter(mediane_nb_conflit >= 5)
 
 #build dummy variable either each year nb of conflict is above or below the mediane
 events_by_country_year <- events_by_country_year %>%
   mutate(dummy_sup_mediane = if_else(nb_event >= mediane_nb_conflit, 1, 0))
 
 #build our relative nb of event per country per year (5 quintiles)
+
 events_by_country_year <- events_by_country_year %>%
   group_by(country) %>%
   mutate(
-    quintile_nb_event = ntile(nb_event, 5)
-  ) %>%
+    quintile_nb_event = ntile(nb_event, 5)) %>%
   ungroup() %>% 
   mutate(iso3 = countrycode(country, "country.name", "iso3c"))
 
