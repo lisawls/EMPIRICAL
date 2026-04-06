@@ -43,11 +43,11 @@ library(tidyr)
 
 # 1) Parameters----
 # End of the pre-treatment period and start of the post-treatment period
-pre_end <- 2016
-post_start <- 2017
+pre_end <- 2008
+post_start <- 2009
 
 # Optional sample restrictions on years
-year_min <- NA
+year_min <- 1995
 year_max <- NA
 
 # 2) Load raw data and standardize variables----
@@ -102,7 +102,7 @@ aid_africa <- aid_clean %>%
     is.na(year_min) | year >= year_min
   ) %>%
   select(-continent)
-write.csv(aid_africa, "processed_data_stats_aid_africa.csv", row.names = FALSE)
+# write.csv(aid_africa, "processed_data_stats_aid_africa.csv", row.names = FALSE)
 
 
 # 4) Construct country-year aid aggregates (US vs. total aid)----
@@ -139,7 +139,16 @@ tot_aid_country_africa <- aid_africa %>%
     aid_food_us = aid_us_food,
     aid_hum_us = aid_us_hum,
     aid_total_all = aid_food_all + aid_hum_all,
-    aid_total_us = aid_food_us + aid_hum_us)
+    aid_total_us = aid_food_us + aid_hum_us) %>% 
+  filter(year > 1994)
+
+conflict <- read.csv("processed_data_conflict.csv")
+
+crisis <- conflict %>%
+  left_join(tot_aid_country_africa, by = c("iso3" = "recipient_iso3", "year" = "year")) %>% 
+  group_by(year) %>%
+  summarise(total_hum = sum(aid_hum_us, na.rm = TRUE)) 
+
 write.csv(tot_aid_country_africa, "processed_data_regression_aid.csv", row.names = FALSE)
 
  
@@ -166,7 +175,7 @@ write.csv(tot_aid_country_africa, "processed_data_regression_aid.csv", row.names
      starts_with("aid_"),
      starts_with("share_us_"))
  
-write.csv(aid_shares_cty_year, "processed_stats_aid_africa_share.csv", row.names = FALSE)
+# write.csv(aid_shares_cty_year, "processed_stats_aid_africa_share.csv", row.names = FALSE)
 
 # 5) Construct the exposure term----
 # Exposure is defined as pre-2017 dependence on US aid.
@@ -199,44 +208,86 @@ pre_shares <- tot_aid_country_africa %>%
        us_pre_total / all_pre_total,
        NA_real_))
 
+conflict <- read_csv("processed_data_conflict.csv") %>%
+  distinct(country) %>% 
+  mutate(iso3 = countrycode(country, "country.name", "iso3c"))
 
-pays_ayant_recu_aide_us_total <- tot_aid_country_africa %>%
-  group_by(recipient_iso3, recipient) %>%
+merge <- conflict %>%
+  left_join(pre_shares, by = c("iso3" = "recipient_iso3")) %>% 
+  select(country, share_pre_hum)
+
+library(knitr)
+
+merge %>%
+  arrange(desc(share_pre_hum)) %>% 
+  mutate(share_pre_hum = round(share_pre_hum, 2)) %>% 
+  kable(format = "latex",
+        booktabs = TRUE,
+        longtable = TRUE,
+        digits = 2,
+        col.names = c("Country", "Humanitarian aid (US share, %)"),
+        caption = "Country-level U.S. humanitarian aid share before 2017",
+        align = c("l", "r")) %>%
+  #kable_styling(latex_options = c("repeat_header")) %>%
+  cat()
+
+
+summary_stats <- merge %>%
   summarise(
-    total_us_recu = sum(aid_total_us, na.rm = TRUE),
-    .groups = "drop"
+    Mean = mean(share_pre_hum, na.rm = TRUE),
+    Median = median(share_pre_hum, na.rm = TRUE),
+    SD = sd(share_pre_hum, na.rm = TRUE),
+    Min = min(share_pre_hum, na.rm = TRUE),
+    Max = max(share_pre_hum, na.rm = TRUE),
+    N = sum(!is.na(share_pre_hum))
   ) %>%
-  filter(total_us_recu > 0)
+  mutate(across(where(is.numeric), ~ round(., 2)))
 
-pays_ayant_recu_aide_us_hum <- tot_aid_country_africa %>%
-  group_by(recipient_iso3, recipient) %>%
-  summarise(
-    hum_us_recu = sum(aid_hum_us, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  filter(hum_us_recu > 0)
+summary_stats %>%
+  kable(format = "latex",
+        booktabs = TRUE,
+        caption = "Descriptive statistics of U.S. humanitarian aid share before 2017",
+        align = "c") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  cat()
+
+# pays_ayant_recu_aide_us_total <- tot_aid_country_africa %>%
+#   group_by(recipient_iso3, recipient) %>%
+#   summarise(
+#     total_us_recu = sum(aid_total_us, na.rm = TRUE),
+#     .groups = "drop"
+#   ) %>%
+#   filter(total_us_recu > 0)
+# 
+# pays_ayant_recu_aide_us_hum <- tot_aid_country_africa %>%
+#   group_by(recipient_iso3, recipient) %>%
+#   summarise(
+#     hum_us_recu = sum(aid_hum_us, na.rm = TRUE),
+#     .groups = "drop"
+#   ) %>%
+#   filter(hum_us_recu > 0)
+# 
+# 
+# pays_ayant_recu_aide_us_food <- tot_aid_country_africa %>%
+#   group_by(recipient_iso3, recipient) %>%
+#   summarise(
+#     food_us_recu = sum(aid_food_us, na.rm = TRUE),
+#     .groups = "drop"
+#   ) %>%
+#   filter(food_us_recu > 0)
+# 
+# tableau_pays_aide_us <- pays_ayant_recu_aide_us_total %>%
+#   full_join(pays_ayant_recu_aide_us_hum, by = c("recipient_iso3", "recipient")) %>%
+#   full_join(pays_ayant_recu_aide_us_food, by = c("recipient_iso3", "recipient")) %>%
+#   mutate(
+#     total_us = !is.na(total_us_recu),
+#     hum_us = !is.na(hum_us_recu),
+#     food_us = !is.na(food_us_recu)
+#   ) %>%
+#   select(recipient_iso3, recipient, total_us, hum_us, food_us)
 
 
-pays_ayant_recu_aide_us_food <- tot_aid_country_africa %>%
-  group_by(recipient_iso3, recipient) %>%
-  summarise(
-    food_us_recu = sum(aid_food_us, na.rm = TRUE),
-    .groups = "drop"
-  ) %>%
-  filter(food_us_recu > 0)
-
-tableau_pays_aide_us <- pays_ayant_recu_aide_us_total %>%
-  full_join(pays_ayant_recu_aide_us_hum, by = c("recipient_iso3", "recipient")) %>%
-  full_join(pays_ayant_recu_aide_us_food, by = c("recipient_iso3", "recipient")) %>%
-  mutate(
-    total_us = !is.na(total_us_recu),
-    hum_us = !is.na(hum_us_recu),
-    food_us = !is.na(food_us_recu)
-  ) %>%
-  select(recipient_iso3, recipient, total_us, hum_us, food_us)
-
-
-write.csv(tableau_pays_aide_us, "processed_data_list_pays.csv", row.names = FALSE)
+# write.csv(tableau_pays_aide_us, "processed_data_list_pays.csv", row.names = FALSE)
 
 # 6) Construct the shock term----
  # 1. Compute the aggregate US share of aid in each year across all African recipient countries:
@@ -302,4 +353,4 @@ shift_share <- tot_aid_country_africa %>%
     iv_total = share_pre_total * shock_total
   )
 
-write.csv(shift_share, "processed_data_regression_shift_share.csv", row.names = FALSE)
+# write.csv(shift_share, "processed_data_regression_shift_share.csv", row.names = FALSE)

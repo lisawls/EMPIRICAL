@@ -63,8 +63,9 @@ events_by_country_year <- events_by_country_year %>%
 events_by_country_year <- events_by_country_year %>%
   group_by(country) %>%
   mutate(
-    quintile_nb_event = ntile(nb_event, 5)) %>%
-  ungroup() %>% 
+    # quintile_nb_event = ntile(nb_event, 5)) %>%
+    decile_nb_event = ntile(nb_event, 10)) %>%
+    ungroup() %>% 
   mutate(iso3 = countrycode(country, "country.name", "iso3c")) 
 
 write.csv(events_by_country_year,"processed_data_conflict.csv",row.names = FALSE)
